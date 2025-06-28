@@ -1,0 +1,59 @@
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SSCT</title>
+  <link rel="stylesheet" href="medicines.css">
+  <style>
+      /* Add CSS for the input box */
+      #search-bar {
+          border: 3px solid #333; /* Dark border */
+          padding: 8px; /* Decreased padding */
+          width: 50%; /* Decreased width */
+          box-sizing: border-box; /* Ensure padding is included in width */
+          font-size: 18px; /* Increased font size */
+          margin-bottom: 15px;
+      }
+
+      /* Add CSS for the label */
+      label {
+          font-size: 30px; /* Increased font size */
+          display: block; /* Ensure label is on a separate line */
+          margin-bottom: 8px; /* Add some space below the label */
+      }
+      #submit {
+          font-size: 24px; /* Increased font size */
+          padding: 12px 20px; /* Increased padding */
+      }
+  </style>
+</head>
+<body>
+  <header class="header">
+      <!--   start logo -->
+      <a href="#" class="logo">
+          <i class="fas fa-tooth"></i>
+          VALIANT MEDICINES
+      </a>
+
+      <!--   start navbar -->
+      <nav class="navbar">
+          <a href="main.html">home</a>
+          <a href="about.html">about</a>
+          <a href="#services">Medicines</a>
+          <a href="#pricing">Services</a>
+      </nav>
+  </header>
+  <main>
+      <form class="search-form" id="searchform">
+          <h1>ALTERNATE MEDICINES</h1>
+          <label for="search-bar">Enter the medicine name</label> <!-- Changed label text -->
+          <input type="text" id="search-bar" placeholder="Enter medicine name" autocomplete="off" />
+          <p>or</p> 
+          <label for="file-upload">Choose the image or file :</label> <!-- New label for file upload -->
+          <input type="file" id="file-upload" name="file-upload" accept="image/*" />
+          <ul class="output" style="display:none;"></ul>
+          <button type="submit" id="submit">Search</button>
+      </form>
+  </main>
+  <script src="medicines.js"></script>
+</body>
